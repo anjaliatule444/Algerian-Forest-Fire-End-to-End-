@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+
+</head>
+<div class="container">
+  <div class="row">
+    <center><h1>Algerian Forest Fire Prediction</h1><br></center>
+     <form action="check.html" method="POST" enctype="multipart/form-data" >
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <label>Classification*</label><br>
+        <select name="classification" class="btn btn-default col-md-6">
+            <option value="">Select</option>
+            <option value="c_single_input">Single Input</option>
+            <option value="c_batch_input">Batch Input</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label>Regression*</label><br>
+        <select name="Regression" class="btn btn-default col-md-6">
+            <option value="">Select</option>
+            <option value="r_single_input">Single Input</option>
+            <option value="r_batch_input">Batch Input</option>
+        </select>
+      </div>
+      <div class="col-md-3"></div>
+  </div>
+  <br><br>
+  <div class="row">
+    <center>
+      <input class="btn btn-default btn-lg" type="submit" name="submit" value="submit">
+    </form></center></div>
+  </div>
+ </div>
