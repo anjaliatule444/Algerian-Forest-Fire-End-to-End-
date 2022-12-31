@@ -7,9 +7,9 @@ app=Flask(__name__)
 Classification_model=pickle.load(open("Decision_Tree_Classifier.pkl","rb"))
 Regression_model=pickle.load(open("random_forest_regressor.pkl","rb"))
 
-@app.route('/')
-def home():
-    return render_template('home.html')
+#@app.route('/')
+#def home():
+#    return render_template('home.html')
 
 ## Postman-Single Input-Classification
 @app.route("/predict_api_classification_si",methods=['POST'])
